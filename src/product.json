@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "name": "modern chair",
+        "price": "180",
+        "description":"Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "quantity": 1,
+        "images": ["chair1.jpg","chair2.jpg","chair3.jpg","chair4.jpg"]
+    },
+    {
+        "id": 2,
+        "name": "minimalistic plan",
+        "price": "100",
+        "description":"Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "quantity": 1,
+        "images": ["chair4.jpg","chair5.jpg","chair6.jpg","chair7.jpg"]
+    },
+    {
+        "id": 3,
+        "name": "plan pot",
+        "price": "120",
+        "description":"Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "quantity": 1,
+        "images": ["chair8.jpg","chair9.jpg","chair10.jpeg","chair7.jpg"]
+    },
+    {
+        "id": 4,
+        "name": "small table",
+        "price": "140",
+        "description":"Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "quantity": 1,
+        "images": ["chair10.jpeg","chair9.jpg","chair8.jpg","chair6.jpg"]
+    },
+    {
+        "id": 5,
+        "name": "night stand",
+        "price": "150",
+        "description":"Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "quantity": 1,
+        "images": ["chair8.jpg","chair9.jpg","chair10.jpeg","lamp1.jpeg"]
+    },
+    {
+        "id": 6,
+        "name": "modern rocking chair",
+        "price": "900",
+        "description":"Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "quantity": 1,
+        "images": ["lamp2.jpeg","lamp3.jpeg","lamp4.jpeg","lamp5.jpeg"]
+    },
+    {
+        "id": 7,
+        "name": "home deco",
+        "price": "400",
+        "description":"Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "quantity": 1,
+        "images": ["lamp2.jpeg","lamp4.jpeg","lamp3.jpeg","chair10.jpeg"]
+    },
+    {
+        "id": 8,
+        "name": "metalic chair",
+        "price": "300",
+        "description":"Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "quantity": 1,
+        "images": ["chair10.jpeg","lamp3.jpeg","lamp4.jpeg","lamp1.jpeg"]
+    },
+    {
+        "id": 9,
+        "name": "night lamp",
+        "price": "500",
+        "description":"Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "quantity": 1,
+        "images": ["chair1.jpg","chair4.jpg","chair5.jpg","chair6.jpg"]
+    },
+    {
+        "id": 10,
+        "name": "sweet bed",
+        "price": "400",
+        "description":"Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "quantity": 1,
+        "images": ["chair3.jpg","chair5.jpg","chair7.jpg","chair6.jpg"]
+    }
+    
+]

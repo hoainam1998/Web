@@ -1,0 +1,133 @@
+.category {
+    width: 18%;
+    background-color: #f5f7fa;
+    float: left;
+    padding: 4rem 2rem;
+    box-sizing: border-box;
+}
+
+.category ul {
+    list-style-type: none;
+    margin: 3rem 0;
+}
+
+.category ul li {
+    color: var(--textcolor);
+    font-weight: bold;
+    transition: color 0.4s ease;
+    cursor: pointer;
+}
+
+.category ul li:hover ,.colorLink{
+    color: var(--primarycolor) !important;
+}
+
+.category ul li, .category h3 {
+    margin-bottom: 2rem;
+}
+
+.category form fieldset{
+    margin-bottom: 1rem;
+    border: none;
+    font-weight: bold;
+    color: var(--textcolor);
+}
+
+.category form fieldset label{
+    transition: color 0.5s ease;
+    cursor: pointer;
+}
+
+.category form fieldset label:hover {
+    color: var(--primarycolor);
+}
+
+.category form fieldset input {
+    margin-right: 1rem;
+}
+
+.color {
+    margin-bottom: 4rem;
+}
+
+.color div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.color span {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="range"]+p{
+    color: var(--textcolor);
+    font-weight: 600;
+}
+
+input[type="range"] {
+    appearance: none;
+    width: 100%;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 25px;
+    height: 1rem;
+    background: var(--primarycolor);
+    cursor: pointer;
+}
+
+@media (max-width:768px){
+    .category {
+        width: 20%;
+        padding: 4rem 1rem;
+        margin-right: 1rem;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    form fieldset {
+        padding:0;
+    }
+
+    form fieldset input {
+        margin-right: 0.5rem !important;
+    }
+
+    .color span {
+        width: 24px;
+        height: 24px
+    }
+
+}
+
+@media (max-width: 375px){
+    .category {
+        width: 100%;
+        padding: 4rem 1rem;
+    }
+
+    .reserver {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0 1rem;
+    }
+}
+  
+
