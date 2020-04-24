@@ -92,7 +92,10 @@ class Home extends React.Component {
     }
 
     addEventForLinkSideMenu = () => {
-        document.querySelector('.sideMenu_active__s1_Vn').classList.remove('sideMenu_active__s1_Vn');
+        let styleSideMenu=document.querySelector('.sideMenu_active__s1_Vn');
+        if(styleSideMenu){
+            styleSideMenu.classList.remove('sideMenu_active__s1_Vn');
+        }
         document.querySelector('#home').classList.add(`sideMenu_active__s1_Vn`);
     }
 
