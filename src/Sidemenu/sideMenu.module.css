@@ -16,7 +16,6 @@
     box-sizing: border-box;
     font-size: 14px;
     float: left;
-    margin-bottom: 3.5rem
 }
 
 .sideMenu img{
@@ -143,6 +142,10 @@
 .socila_info i:hover {
     color:var(--primarycolor);
 }
+
+.sideMenuDisappear {}
+
+.sideMenuAppear{}
 
 @media (max-width: 922px){
     .sideMenu{

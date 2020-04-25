@@ -14,31 +14,10 @@ class Cart extends Component {
         }
     }
 
-    renderCart = (cart) => {
-        return cart.map((item, pos) => {
-            return (
-                <tr id={pos} key={pos}>
-                    <td><img src={require(`../images/${item.images[0]}`)} alt="chair"></img></td>
-                    <td>{item.name}</td>
-                    <td>$ {item.price}</td>
-                    <td>
-                        <div className={style.quantity}>
-                            <span>Qty</span>
-                            <span>-</span>
-                            <span>{item.quantity}</span>
-                            <span>+</span>
-                        </div>
-                        <span className={style.remove}>remove</span>
-                    </td>
-                </tr>
-            );
-        })
-    }
-
     cart = () => {
         if (this.props.match.url !== "/cart") {
             let id = parseInt(this.props.match.params.id);
-            let quantity = this.props.match.params.quantity;
+            let quantity = parseInt(this.props.match.params.quantity);
             let cart = [];
             let singleItem = ProductData.find(item => item.id === id);
             singleItem.quantity = quantity;
@@ -52,6 +31,27 @@ class Cart extends Component {
         this.cartItem = Stogare.getCart();
     };
 
+    renderCart = () => {
+        return this.cartItem.map((item, pos) => {
+            return (
+                <tr id={pos} key={pos}>
+                    <td><img src={require(`../images/${item.images[0]}`)} alt="chair"></img></td>
+                    <td>{item.name}</td>
+                    <td>$ {item.price}</td>
+                    <td>
+                        <div className={style.quantity}>
+                            <span>Qty</span>
+                            <span>-</span>
+                            <span>{item.quantity}</span>
+                            <span>+</span>
+                        </div>
+                        <Link to={'/cart'}><span className={style.remove}>remove</span></Link>
+                    </td>
+                </tr>
+            );
+        })
+    }
+
     checkItemExisted = (id) => {
         return Stogare.getCart().filter(item => item.id !== id);
     }
@@ -62,22 +62,19 @@ class Cart extends Component {
     }
 
     addEventRemoveCart = () => {
-        let remove = document.querySelectorAll('.cart_remove__2Eq6C');
-        let tbody = document.querySelector('tbody');
+        let remove = document.querySelectorAll('.cart_remove__30Tho');
         remove.forEach(item => {
             item.addEventListener('click', (evt) => {
                 let element = evt.target.parentElement.parentElement;
                 let id = element.id;
                 this.removeCardItem(id);
-                tbody.removeChild(element);
                 this.calcTotal();
             });
         });
     }
 
     addEventCartControl = () => {
-        let cartcontrol = document.querySelectorAll('.cart_quantity__2iMEW');
-        let tbody = document.querySelector('tbody');
+        let cartcontrol = document.querySelectorAll('.cart_quantity__1YjCP');
         cartcontrol.forEach(item => {
             let productCart = item.parentElement.parentElement;
             item.addEventListener('click', (evt) => {
@@ -92,7 +89,7 @@ class Cart extends Component {
                     let quantity = parseInt(element.nextSibling.innerText) - 1;
                     if (quantity === 0) {
                         this.removeCardItem(productCart.id);
-                        tbody.removeChild(productCart);
+                        element.parentElement.nextSibling.click();
                     } else {
                         this.cartItem[productCart.id].quantity = quantity;
                         Stogare.saveCart(this.cartItem);
@@ -102,7 +99,6 @@ class Cart extends Component {
                 }
             });
         });
-
     }
 
     calcTotal = () => {
@@ -124,11 +120,11 @@ class Cart extends Component {
     }
 
     addEventForLinkSideMenu = () => {
-        let styleSideMenu=document.querySelector('.sideMenu_active__s1_Vn');
+        let styleSideMenu=document.querySelector('.sideMenu_active__1xRv3');
         if(styleSideMenu){
-            styleSideMenu.classList.remove('sideMenu_active__s1_Vn');
+            styleSideMenu.classList.remove('sideMenu_active__1xRv3');
         }
-        document.querySelector('#cart').classList.add(`sideMenu_active__s1_Vn`);
+        document.querySelector('#cart').classList.add(`sideMenu_active__1xRv3`);
     }
 
     componentDidMount() {
@@ -140,7 +136,6 @@ class Cart extends Component {
 
     render() {
         this.cart(this.props.match.params.id);
-        this.renderCart(this.cartItem);
         return (
             <div className={style.cart}>
                 <h1>Shopping Cart</h1>
@@ -156,7 +151,7 @@ class Cart extends Component {
                                 </tr>
                             </thead>
                             <tbody>
-                                {this.renderCart(this.cartItem)}
+                                {this.renderCart()}
                             </tbody>
                         </table>
                     </div>

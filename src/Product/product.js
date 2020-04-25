@@ -55,7 +55,7 @@ class Product extends React.Component {
     }
 
     addEventForCollection = () => {
-        let $listImg = document.querySelectorAll('.product_imagesCollection__2swag li div img');
+        let $listImg = document.querySelectorAll('.product_imagesCollection__3ltcZ li div img');
 
         let styleForimg = "2px solid var(--primarycolor)";
         $listImg.forEach(item => {
@@ -72,7 +72,7 @@ class Product extends React.Component {
     }
 
     addEventForLinkSideMenu = () => {
-        document.querySelector('.sideMenu_active__s1_Vn').classList.remove('sideMenu_active__s1_Vn');
+        document.querySelector('.sideMenu_active__1xRv3').classList.remove('sideMenu_active__1xRv3');
     }
 
     render() {

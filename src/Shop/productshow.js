@@ -4,11 +4,6 @@ import { Link } from 'react-router-dom';
 
 class ProductShow extends Component {
 
-    addEventforLinkToCart = () => {
-        document.querySelector('#cart').classList.add(`sideMenu_active__s1_Vn`);
-        document.querySelector('.sideMenu_active__s1_Vn').classList.remove('sideMenu_active__s1_Vn');
-    }
-
     render() {
         let product = this.props.data;
         return (

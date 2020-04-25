@@ -2,6 +2,7 @@
     float: left;
     width: 75%;
     position: relative;
+    height: 1040px;
 }
 
 .home_product a{
@@ -63,6 +64,7 @@
 @media (max-width: 922px){
     .home_product {
         width: 60% !important;
+        height: 100%;
     }
 
     .product {
@@ -83,5 +85,6 @@
     .home_product {
         width: 100% !important;
         margin-top: 5rem;
+        height: 100%;
     }
 }

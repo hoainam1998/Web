@@ -40,6 +40,10 @@ table tbody tr td {
     text-transform: capitalize;
 }
 
+td a {
+    text-decoration: none;
+    color: black;
+}
 
 td img {
     width: 100%;
