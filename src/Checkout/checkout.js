@@ -12,12 +12,12 @@ class Checkout extends React.Component {
     }
 
     addEventForLinkSideMenu = () => {
-        document.querySelector('.sideMenu_active__1xRv3').classList.remove('sideMenu_active__1xRv3');
+        document.querySelector('.sideMenu_active__3D3fU').classList.remove('sideMenu_active__3D3fU');
     }
 
     addEventforCountryChoiseBox = () => {
         let $icon = document.querySelector('.fa-angle-down');
-        let $choisebox = document.querySelector('.checkout_dropdownMenu__2Ngzy');
+        let $choisebox = document.querySelector('.checkout_dropdownMenu__1sAS0');
         $icon.onclick = () => {
             $icon.classList.toggle(`${style.rotate}`);
             $choisebox.classList.toggle('is-visible');
@@ -25,13 +25,13 @@ class Checkout extends React.Component {
     }
 
     addEventforDropdownMenuValueChange = () => {
-        let $value = document.querySelectorAll('.checkout_dropdownMenu__2Ngzy ul li');
+        let $value = document.querySelectorAll('.checkout_dropdownMenu__1sAS0 ul li');
         let $text = document.querySelector('#valuetext');
         $value.forEach(item => {
             item.onclick = () => {
-                let oldvalue = document.querySelector('.checkout_changeColor__1jgBr');
+                let oldvalue = document.querySelector('.checkout_changeColor__2gt4w');
                 if (oldvalue) {
-                    oldvalue.classList.remove('checkout_changeColor__1jgBr');
+                    oldvalue.classList.remove('checkout_changeColor__2gt4w');
                 }
                 $text.innerText = item.innerText;
                 item.classList.add(`${style.changeColor}`);

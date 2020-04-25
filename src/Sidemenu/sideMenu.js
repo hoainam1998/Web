@@ -58,20 +58,20 @@ class SideMenu extends Component {
 
         a.forEach(item => {
             item.addEventListener('click', (evt) => {
-                let styleSideMenu=document.querySelector('.sideMenu_active__s1_Vn');
+                let styleSideMenu=document.querySelector('.sideMenu_active__3D3fU');
                 if(styleSideMenu){
-                    styleSideMenu.classList.remove('sideMenu_active__s1_Vn');
+                    styleSideMenu.classList.remove('sideMenu_active__3D3fU');
                 }
-                item.classList.add(`sideMenu_active__s1_Vn`);
+                item.classList.add(`sideMenu_active__3D3fU`);
             });
         });
     }
 
     barheaderClick = () => {
-        document.querySelector('.sideMenu_sideMenu__1HpcT')
+        document.querySelector('.sideMenu_sideMenu__19aVz')
             .classList.toggle(`${style.sideMenuAppear}`);
 
-        document.querySelector('.sideMenu_sideMenu__1HpcT')
+        document.querySelector('.sideMenu_sideMenu__19aVz')
             .classList.toggle(`${style.sideMenuDisappear}`);
     }
 }
