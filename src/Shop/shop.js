@@ -21,12 +21,12 @@ class Shop extends Component {
 
     linklist = [];
     addEventforLink = () => {
-        const linkCategory = (document.querySelectorAll('.shop_category__2-Meg ul li'));
+        const linkCategory = (document.querySelectorAll('.shop_category__8yVzD ul li'));
         this.linklist = [...linkCategory];
         linkCategory.forEach(link => {
             link.addEventListener('click', (evt) => {
                 this.setState({ id: link.id });
-                document.querySelector('.shop_colorLink__12xOm').classList.remove('shop_colorLink__12xOm');
+                document.querySelector('.shop_colorLink__hoBUI').classList.remove('shop_colorLink__hoBUI');
                 link.classList.add(`${style.colorLink}`);
             }
             );
@@ -34,15 +34,15 @@ class Shop extends Component {
     }
 
     addEventForLinkSideMenu = () => {
-        let styleSideMenu=document.querySelector('.sideMenu_active__s1_Vn');
+        let styleSideMenu=document.querySelector('.sideMenu_active__1xRv3');
         if(styleSideMenu){
-            styleSideMenu.classList.remove('sideMenu_active__s1_Vn');
+            styleSideMenu.classList.remove('sideMenu_active__1xRv3');
         }
-        document.querySelector('#shop').classList.add(`sideMenu_active__s1_Vn`);
+        document.querySelector('#shop').classList.add(`sideMenu_active__1xRv3`);
     }
 
     addEventforLabel = () => {
-        const labels = document.querySelectorAll('.category_category__2Qm1M form fieldset label');
+        const labels = document.querySelectorAll('.shop_category__8yVzD form fieldset label');
         labels.forEach(label => {
             label.onclick = () => {
                 label.previousElementSibling.click();

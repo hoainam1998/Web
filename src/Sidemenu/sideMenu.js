@@ -68,11 +68,11 @@ class SideMenu extends Component {
     }
 
     barheaderClick = () => {
-        document.querySelector('.sideMenu_sideMenu__17Waq')
-            .classList.toggle('sideMenu_sideMenuAppear__2Zga3');
+        document.querySelector('.sideMenu_sideMenu__1HpcT')
+            .classList.toggle(`${style.sideMenuAppear}`);
 
-        document.querySelector('.sideMenu_sideMenu__17Waq')
-            .classList.toggle('sideMenu_sideMenuDisappear__1XYtS');
+        document.querySelector('.sideMenu_sideMenu__1HpcT')
+            .classList.toggle(`${style.sideMenuDisappear}`);
     }
 }
 
