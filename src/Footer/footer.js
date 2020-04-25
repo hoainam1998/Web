@@ -36,7 +36,7 @@ const footer = () => {
 }
 
 const clickBar=()=>{
-    document.getElementsByClassName('footer_navigator__2UJV-')[0].classList.toggle("is-visible");
+    document.getElementsByClassName('footer_navigator__dwbk5')[0].classList.toggle("is-visible");
 }
 
 export default footer;

@@ -62,7 +62,7 @@ class Cart extends Component {
     }
 
     addEventRemoveCart = () => {
-        let remove = document.querySelectorAll('.cart_remove__30Tho');
+        let remove = document.querySelectorAll('.cart_remove__1MVip');
         remove.forEach(item => {
             item.addEventListener('click', (evt) => {
                 let element = evt.target.parentElement.parentElement;
@@ -74,7 +74,7 @@ class Cart extends Component {
     }
 
     addEventCartControl = () => {
-        let cartcontrol = document.querySelectorAll('.cart_quantity__1YjCP');
+        let cartcontrol = document.querySelectorAll('.cart_quantity__38HX8');
         cartcontrol.forEach(item => {
             let productCart = item.parentElement.parentElement;
             item.addEventListener('click', (evt) => {
@@ -120,11 +120,11 @@ class Cart extends Component {
     }
 
     addEventForLinkSideMenu = () => {
-        let styleSideMenu=document.querySelector('.sideMenu_active__1xRv3');
+        let styleSideMenu=document.querySelector('.sideMenu_active__3D3fU');
         if(styleSideMenu){
-            styleSideMenu.classList.remove('sideMenu_active__1xRv3');
+            styleSideMenu.classList.remove('sideMenu_active__3D3fU');
         }
-        document.querySelector('#cart').classList.add(`sideMenu_active__1xRv3`);
+        document.querySelector('#cart').classList.add(`sideMenu_active__3D3fU`);
     }
 
     componentDidMount() {
