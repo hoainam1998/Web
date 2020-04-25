@@ -26,7 +26,7 @@ class Shop extends Component {
         linkCategory.forEach(link => {
             link.addEventListener('click', (evt) => {
                 this.setState({ id: link.id });
-                document.querySelector('.shop_colorLink__W59xX').classList.remove('sshop_colorLink__W59xX');
+                document.querySelector('.shop_colorLink__W59xX').classList.remove('shop_colorLink__W59xX');
                 link.classList.add(`${style.colorLink}`);
             }
             );

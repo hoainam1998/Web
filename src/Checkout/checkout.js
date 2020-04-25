@@ -29,9 +29,9 @@ class Checkout extends React.Component {
         let $text = document.querySelector('#valuetext');
         $value.forEach(item => {
             item.onclick = () => {
-                let oldvalue = document.querySelector('.checkout_changeColor__1jgBr');
+                let oldvalue = document.querySelector('.checkout_changeColor__2gt4w');
                 if (oldvalue) {
-                    oldvalue.classList.remove('checkout_changeColor__1jgBr');
+                    oldvalue.classList.remove('checkout_changeColor__2gt4w');
                 }
                 $text.innerText = item.innerText;
                 item.classList.add(`${style.changeColor}`);
